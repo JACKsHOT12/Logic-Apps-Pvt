@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackstore</title>
+  <style>
+    body {
+      background-color: #f5f5dc; /* light beige */
+      color: #8b4513; /* saddlebrown */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff8dc; /* cornsilk */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #8b4513; /* saddlebrown */
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .custom-file-upload {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #8b4513; /* saddlebrown */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .custom-file-upload:hover {
+      background-color: #a0522d; /* sienna */
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #8b4513; /* saddlebrown */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a0522d; /* sienna */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Jackstore Logo" class="logo">
+    <h1>Welcome to Jackstore</h1>
+    <p>Upload your files here:</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="file-upload" class="custom-file-upload">
+        <input type="file" id="file-upload" name="file">Choose File
+      </label>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>
